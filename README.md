@@ -12,6 +12,7 @@ Output
 
 
 Model (With feature selection)
+
 Input
 'Age','Vaccinated_2','Sterilized_2'
 
