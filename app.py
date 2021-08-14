@@ -1,4 +1,5 @@
 from flask import Flask, request
+from flask_cors import CORS
 import pickle
 
 with open('adoption_speed.model', 'rb') as f:
@@ -6,10 +7,12 @@ with open('adoption_speed.model', 'rb') as f:
 
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/api/adoption-speed', methods=['POST'])
 def adoption_speed():
     input = request.json
+    print('\n Request:\n', input, '\n')
     pred = round(model.predict([[input.get('age'), input.get('notVaccinated'), input.get('notSterilized')]])[0])
     
     if pred == 0:
