@@ -1,6 +1,6 @@
 # petrus-ml
 
-Model (No feature selection)
+ModelV1 (Linear regression without feature selection)
 
 Input
 'Age', 'MaturitySize', 'FurLength', 'Quantity', 'Fee', 'VideoAmt','Description', 'PhotoAmt', 'Type_2', 'Gender_2', 'Gender_3', 'Color1_2',
@@ -11,7 +11,7 @@ Output
 'AdoptionSpeed'
 
 
-Model (With feature selection)
+Model (Linear regression with feature selection)
 
 Input
 'Age','Vaccinated_2','Sterilized_2'
