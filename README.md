@@ -32,3 +32,4 @@ Output-
 'AdoptionSpeed_0', 'AdoptionSpeed_1', 'AdoptionSpeed_2',
        'AdoptionSpeed_3', 'AdoptionSpeed_4'
 
+To run ML service, in terminal at root directory run:`flask run`
